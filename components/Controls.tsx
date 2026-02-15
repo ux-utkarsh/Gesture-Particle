@@ -71,7 +71,7 @@ const Controls: React.FC<ControlsProps> = ({
 
   if (isMinimized) {
     return (
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="absolute top-4 left-4 md:bottom-8 md:left-1/2 md:top-auto md:transform md:-translate-x-1/2 z-50">
         <button
           onClick={() => setIsMinimized(false)}
           className="bg-black/60 backdrop-blur-xl border border-white/10 rounded-full p-4 shadow-2xl text-white hover:bg-white/10 transition-colors"
@@ -166,8 +166,8 @@ const Controls: React.FC<ControlsProps> = ({
               <button
                 onClick={() => onToggleAudio('mic')}
                 className={`px-3 py-1 text-xs rounded-full transition-all ${activeAudioSource === 'mic'
-                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
-                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
+                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   }`}
               >
                 Mic
@@ -175,8 +175,8 @@ const Controls: React.FC<ControlsProps> = ({
               <button
                 onClick={() => onToggleAudio('system')}
                 className={`px-3 py-1 text-xs rounded-full transition-all ${activeAudioSource === 'system'
-                    ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/30'
-                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/30'
+                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   }`}
               >
                 Tab/Sys

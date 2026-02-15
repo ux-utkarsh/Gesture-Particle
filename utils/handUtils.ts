@@ -34,7 +34,7 @@ export class HandTracker {
       const model = handPoseDetection.SupportedModels.MediaPipeHands;
       const detectorConfig = {
         runtime: 'tfjs',
-        modelType: 'full',
+        modelType: 'lite',
         maxHands: 2,
       } as handPoseDetection.MediaPipeHandsTfjsModelConfig;
 
@@ -66,7 +66,6 @@ export class HandTracker {
         });
 
         console.log("Starting detection loop.");
-        this.updateDebugStatus("Tracking Active");
         this.detectHands();
       } else {
         console.error("Camera access not supported/available.");
