@@ -105,7 +105,7 @@ const ParticleScene: React.FC<ParticleSceneProps> = ({ config, gestureRef, audio
         const currentGesture = gestureRef.current;
         const currentAudio = audioRef.current;
 
-        points.rotation.y += 0.002;
+        points.rotation.y += 0.001;
 
         if (currentGesture.isActive) {
           const targetRotationY = -currentGesture.rotation;
@@ -119,7 +119,7 @@ const ParticleScene: React.FC<ParticleSceneProps> = ({ config, gestureRef, audio
           points.rotation.y += delta * 0.1;
 
           const targetScale = currentGesture.zoom;
-          points.scale.setScalar(THREE.MathUtils.lerp(points.scale.x, targetScale, 0.1));
+          points.scale.setScalar(THREE.MathUtils.lerp(points.scale.x, targetScale, 0.04));
         } else {
           points.scale.setScalar(THREE.MathUtils.lerp(points.scale.x, 1, 0.05));
         }
