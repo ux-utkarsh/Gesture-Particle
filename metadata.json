@@ -1,0 +1,8 @@
+{
+  "name": "Gesture Particles",
+  "description": "Interactive particle system controlled by hand gestures and audio reactivity.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
