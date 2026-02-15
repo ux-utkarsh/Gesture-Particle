@@ -187,7 +187,7 @@ const Controls: React.FC<ControlsProps> = ({
 
         <div className="mt-8 text-center">
           <p className="text-xs text-gray-500 font-mono">
-            Designed and Coded by <a href="https://www.utkarshdesign.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline hover:text-blue-400">Utkarsh</a>
+            Built by <a href="https://www.utkarshdesign.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline hover:text-blue-400">Utkarsh</a>
           </p>
         </div>
       </div>

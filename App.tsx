@@ -145,7 +145,7 @@ const App: React.FC = () => {
       {isLoading && (
         <div className="absolute inset-0 z-[60] flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm">
           <div className="w-12 h-12 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin mb-4"></div>
-          <p className="text-blue-300 font-mono animate-pulse">Initializing Vision Engine...</p>
+          <p className="text-blue-300 font-mono animate-pulse">Building Particle System...</p>
         </div>
       )}
 
